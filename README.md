@@ -84,7 +84,7 @@ Following steps in play book install docker conatiner and download & install elk
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![running docker ps](./images/ELK-docker-image.png)
+![running docker ps](./images/ELK-docker-imgae.png)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
