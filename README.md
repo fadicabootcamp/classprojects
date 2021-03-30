@@ -121,28 +121,29 @@ SSH into the control node and follow the steps below for file beat install:
 #### File Beat config Scrennshot 1 
 ![File Beat Config Screenshot](./Images/file-beat-config-yml.png)
 #### File Beat config Scrennshot 2
-![File Beat Config Screenshot](./mages/file-beat-config-yml2.png)
+![File Beat Config Screenshot](./images/file-beat-config-yml2.png)
 
 - Run the playbook, and navigate to http://40.117.145.102:5601/app/kibana to check that the installation worked as expected.
 #### Kiabana Scrennshot
-![Kiabana portal screenshot](./Images/Kiabana-Portal.png)
+![Kiabana portal screenshot](./images/Kiabana-Portal.png)
 #### File Beat Playbook Scrennshot 
-![File Beat Play Book Screenshot](./Images/file-beat-playbook-yml.png)
+![File Beat Play Book Screenshot](./images/file-beat-playbook-yml.png)
 #### File Beat Playbook install Scrennshot
 ![File Beat Play Book Install](./images/file-beat-playbook-yml-install.png)
 #### File Beat Data Check
 ![File Beat Data Check](./images/systemlog-data-check.png)
 
-ELK Deployment:
-- _Which file is the playbook? elk.yml is playbook file and copy it to /etc/ansible
+### ELK Deployment:
+- _Which file is the playbook? 
+- elk.yml is playbook file and copy it to /etc/ansible
 - you will update Ansible hosts file to add entry for Elk server:
 
 [webservers]
 10.0.0.5 ansible_python_interpreter=/usr/bin/python3
 10.0.0.6 ansible_python_interpreter=/usr/bin/python3
 
-# List the IP address of your ELK server
-# There should only be one IP address
+#### List the IP address of your ELK server
+
 [elk]
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
 
