@@ -27,14 +27,13 @@ Load balancing ensures that the application will be highly available, in additio
 Load balancer protects availability aspect of security. Jump box can sit in a DMZ and be a originating point for accessing internal secured network form public (insecure) network. It provides a buffer for securely accessing servers
 
 Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the metric logs and system logs
-- _TODO: What does Filebeat watch for? Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
-- _TODO: What does Metricbeat record? Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash
+- What does Filebeat watch for? Filebeat monitors the log files or locations that you specify, collects log events, and forwards them either to Elasticsearch or Logstash for indexing
+- What does Metricbeat record? Metricbeat is a lightweight shipper that you can install on your servers to periodically collect metrics from the operating system and from services running on the server. Metricbeat takes the metrics and statistics that it collects and ships them to the output that you specify, such as Elasticsearch or Logstash
 
 File beat dashboard screenshots can be seen here here
-(Images/filebeat-dashboard.png)
+![File beat dashboard](./images/filebeat-dashboard.png)
 
 The configuration details of each machine may be found below.
-_Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
 | Name      |  Function | IP Address | Operating System |
 |---------- |----------|------------|------------------|
@@ -57,6 +56,7 @@ A summary of the access policies in place can be found in the table below.
 |Elk-Server| Yes http/5601       | 69.181.24.29         |
 | Web-1    | NO                  | 10.1.0.4             |
 | Web-2    | No                  | 10.1.0.4             |
+
 ### Elk Configuration
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because you can use ansible to Change the configuration of an application, OS, or device; start and stop services; install or update applications; implement a security policy; or perform a wide variety of other configuration tasks on multiple machines with one configuration file
@@ -92,15 +92,16 @@ Web-1 IP 10.0.0.5 and Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
 - Following beats were installed on these machines:
-  # Use command module
+  #### Use command module
   - name: install metricbeat
     command: dpkg -i metricbeat-7.4.0-amd64.deb
 
-Metric Playbook](Ansible/metric-betat-playbook.yml.md)
-Metric Beat Config Screenshot (Images/metric-beat-config-yml.png)
-Metric Beat Config Screenshot (mages/metric-beat-config-yml2.png)
-Metric Beat Playbook Screenshot (mages/metric-beat-playbook-yml.png)
-Metric Beat Playbook Install Screenshot (mages/metric-beat-play-book-install.png)
+### Metric Playbook
+![Metric Playbook](./Ansible/metric-betat-playbook.yml.md)
+![Metric Beat Config Screensho](./images/metric-beat-config-yml.png)
+![Metric Beat Config Screenshot](./images/metric-beat-config-yml2.png)
+![Metric Beat Playbook Screenshot](./images/metric-beat-playbook-yml.png)
+![Metric Beat Playbook Install Screenshot}(./images/metric-beat-play-book-install.png)
 
 
 These Beats allow us to collect the following information from each machine:
