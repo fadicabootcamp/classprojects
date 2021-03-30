@@ -98,11 +98,14 @@ We have installed the following Beats on these machines:
 
 ### Metric Playbook
 ![Metric Playbook](./Ansible/metric-betat-playbook.yml.md)
+#### Metric Beat Config Scrennshot 1
 ![Metric Beat Config Screensho](./images/metric-beat-config-yml.png)
+#### Metric Beat Config Scrennshot 2
 ![Metric Beat Config Screenshot](./images/metric-beat-config-yml2.png)
+#### Metric Beat Playbook Scrennshot 
 ![Metric Beat Playbook Screenshot](./images/metric-beat-playbook-yml.png)
+#### Metric Beat Playbook Install  Scrennshot 
 ![Metric Beat Playbook Install Screenshot}(./images/metric-beat-play-book-install.png)
-
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
