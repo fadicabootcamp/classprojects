@@ -45,12 +45,8 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 ### Access Policies
 
 The machines on the internal network are not exposed to the public Internet. 
-
 Only the Jump-VM machine can accept SSH connections from the Internet. Access to this machine is only allowed from the following IP addresses: 69.181.24.29
-- 
-
 Machines within the network can only be accessed by docker conatiner runiing on Jump-VM. SSH access to ELK VM ia allowed from Jump-VM (10.1.0.4) through docker conatinesr
-
 
 A summary of the access policies in place can be found in the table below.
 
