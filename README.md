@@ -105,7 +105,8 @@ We have installed the following Beats on these machines:
 #### Metric Beat Playbook Scrennshot 
 ![Metric Beat Playbook Screenshot](./images/metric-beat-playbook-yml.png)
 #### Metric Beat Playbook Install  Scrennshot 
-![Metric Beat Playbook Install Screenshot}(./images/metric-beat-play-book-install.png)
+![Metric Beat Playbook Install Screenshot](./images/metric-beat-play-book-install.png)
+
 
 These Beats allow us to collect the following information from each machine:
 - _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
@@ -117,13 +118,20 @@ In order to use the playbook, you will need to have an Ansible control node alre
 SSH into the control node and follow the steps below for file beat install:
 - Copy the  file to filebeat-config.yml to etc/ansible/files
 - Update the filebeat-config.yml file to include hosts and setup.kibana entries
-- File Beat Config Screenshot (Images/file-beat-config-yml.png)
-- File Beat Config Screenshot (mages/file-beat-config-yml2.png)
+#### File Beat config Scrennshot 1 
+![File Beat Config Screenshot](./Images/file-beat-config-yml.png)
+#### File Beat config Scrennshot 2
+![File Beat Config Screenshot](./mages/file-beat-config-yml2.png)
+
 - Run the playbook, and navigate to http://40.117.145.102:5601/app/kibana to check that the installation worked as expected.
-- Kiabana portal screenshot (Images/Kiabana-Portal.png)
-- File Beat Play Book Screenshot (Images/file-beat-playbook-yml.png)
-- File Beat Play Book Install (images/file-beat-playbook-yml-install.png)
-- File Beat Data Check (images/systemlog-data-check.png)
+#### Kiabana Scrennshot
+![Kiabana portal screenshot](./Images/Kiabana-Portal.png)
+#### File Beat Playbook Scrennshot 
+![File Beat Play Book Screenshot](./Images/file-beat-playbook-yml.png)
+#### File Beat Playbook install Scrennshot
+![File Beat Play Book Install](./images/file-beat-playbook-yml-install.png)
+#### File Beat Data Check
+![File Beat Data Check](./images/systemlog-data-check.png)
 
 ELK Deployment:
 - _Which file is the playbook? elk.yml is playbook file and copy it to /etc/ansible
@@ -137,7 +145,7 @@ ELK Deployment:
 # There should only be one IP address
 [elk]
 10.1.0.4 ansible_python_interpreter=/usr/bin/python3
-_
+
 - _Which URL do you navigate to in order to check that the ELK server is running?
 http://40.117.145.102:5601/app/kibana
 
