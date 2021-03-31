@@ -119,9 +119,9 @@ SSH into the control node and follow the steps below for file beat install:
 - Copy the  file to filebeat-config.yml to etc/ansible/files
 - Update the filebeat-config.yml file to include hosts and setup.kibana entries
 #### File Beat config Scrennshot 1 
-![File Beat Config Screenshot](./Images/file-beat-config-yml.png)
+![File Beat Config Screenshot](./images/file-beat-config-yml.png)
 #### File Beat config Scrennshot 2
-![File Beat Config Screenshot](./images/file-beat-config-yml2.png)
+![File Beat Config Screenshot](./images/file-beat-config-yml-2.png)
 
 - Run the playbook, and navigate to http://40.117.145.102:5601/app/kibana to check that the installation worked as expected.
 #### Kiabana Scrennshot
