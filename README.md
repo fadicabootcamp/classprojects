@@ -96,8 +96,8 @@ We have installed the following Beats on these machines:
   - name: install metricbeat
     command: dpkg -i metricbeat-7.4.0-amd64.deb
 
-### Metric Playbook
-![Metric Playbook](./Ansible/metric-betat-playbook.yml.md)
+### Metric Playbook Screenshot
+![Metric Playbook](./images/metric-betat-playbook-yml.png)
 #### Metric Beat Config Scrennshot 1
 ![Metric Beat Config Screensho](./images/metric-beat-config-yml.png)
 #### Metric Beat Config Scrennshot 2
