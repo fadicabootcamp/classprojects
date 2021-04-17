@@ -42,7 +42,8 @@ Enter the IP address for `demo.testfire.net` into Domain Dossier and answer the 
 
 Is Altoro Mutual vulnerable to XSS: 
 - Answer : Yes
-(images/xxsed.png)
+- ![xss vulnerability](./images/xxsed.png)
+
 
 ### Step 5: Zenmap
 
@@ -55,7 +56,7 @@ Your client has asked that you help identify any vulnerabilities with their file
 
 - Zenmap vulnerability script command: 
 
-(images/zenmap.png)
+![zenmap](./images/zenmap.png)
 
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
