@@ -61,12 +61,15 @@ Your client has asked that you help identify any vulnerabilities with their file
 - Once you have identified this vulnerability, answer the following questions for your client:
   1. What is the vulnerability:
 
-- Answer: sftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.
+- Answer: 
+- IDs:  CVE:CVE-2011-2523  OSVDB:73573
+- sftpd 2.3.4 downloaded between 20110630 and 20110703 contains a backdoor which opens a shell on port 6200/tcp.
+  
   2. Why is it dangerous:
   - Answer : he attack can be initiated remotely. No form of authentication is required for a successful exploitation
 
   3. What mitigation strategies can you recommendations for the client to protect their server:
-
+  - Answer: Install update from vendor's website
 ---
 © 2020 Trilogy Education Services, a 2U, Inc. brand. All Rights Reserved.  
 
